@@ -1,6 +1,12 @@
-public class Cat extends Animal{
+import impl.Illable;
+import impl.Runnable;
+import impl.Speakable;
+import parent.Animal;
+
+
+public class Cat extends Animal implements Runnable, Illable, Speakable {
     public Cat(String name, String color) {
-        super(name, color,4);
+        super(name, color, 4);
     }
 
     public Cat(String name) {
@@ -12,4 +18,13 @@ public class Cat extends Animal{
         System.out.println("Meow!");
     }
 
+    @Override
+    public void getIll() {
+
+    }
+
+    @Override
+    public int getRunSpeed() {
+        return 0;
+    }
 }

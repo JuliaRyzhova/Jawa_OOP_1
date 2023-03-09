@@ -1,13 +1,17 @@
-public class Animal {
+package parent;
+
+public abstract class Animal {
     private String name;
     private String color;
     private int pawsCount;
+    private static int animalsCount = 0;
 
     // Конструкторы
     public Animal(String name, String color, int pawsCount) {
         this.name = name;
         this.color = color;
         this.pawsCount = pawsCount;
+        animalsCount++;
     }
 
     public Animal(String name) {
@@ -22,9 +26,11 @@ public class Animal {
     public void setName(String name) {
         this.name = name;
     }
+
     public void setColor(String color) {
         this.color = color;
     }
+
     public void setPawsCount(int pawsCount) {
         this.pawsCount = pawsCount;
     }
@@ -47,9 +53,6 @@ public class Animal {
     }
 
     //Поведение
-    public void speak() {
-        System.out.println("Yarr!!");
-    }
 
     public void hunt() {
         wakeUp();
@@ -76,18 +79,13 @@ public class Animal {
     public void goToSleep() {
         System.out.println("Already asleep..");
     }
-    public void toFly() {
-        System.out.println("Ииии полетели.....!");
-    }
-    public void toGo(){
-        System.out.printf("Идет!");
-    }
-    public void toSwim(){
-        System.out.printf("Плывет!!!");
-    }
 
     @Override
     public String toString() {
-        return String.format("Имя: %s, Цвет: %s", this.name, this.color);
+        return String.format("Имя: %s", this.name);
+    }
+
+    public static int getAnimalsCount() {
+        return animalsCount;
     }
 }

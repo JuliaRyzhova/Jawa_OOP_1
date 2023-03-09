@@ -1,33 +1,39 @@
-public class Goose extends Animal{
-    public Goose(String name, String color){
+import impl.Runnable;
+import impl.*;
+import parent.Animal;
+
+public class Goose extends Animal implements Flyable, Runnable, Swimable, Illable, Speakable {
+    public Goose(String name, String color) {
         super(name, color, 2);
     }
-    public Goose(String name){
+
+    public Goose(String name) {
         super(name, null, 2);
     }
 
-    @Override
-    public void toFly() {
-        System.out.println("Гусь летит по небу!");
-    }
-
-    @Override
-    public void toGo() {
-        System.out.println("Ходить гуськом - это про нашего гуся");
-    }
-
-    @Override
-    public void toSwim() {
-        System.out.println("Гусь плавает по воде");
-    }
-
-    @Override
-    public void hunt() {
-        System.out.println("Гусь не охотник!");
-    }
 
     @Override
     public void speak() {
         System.out.println("Гагагага!!!!");
+    }
+
+    @Override
+    public int getFlightSpeed() {
+        return 6;
+    }
+
+    @Override
+    public void getIll() {
+
+    }
+
+    @Override
+    public int getRunSpeed() {
+        return 15;
+    }
+
+    @Override
+    public int getSwimSpeed() {
+        return 0;
     }
 }

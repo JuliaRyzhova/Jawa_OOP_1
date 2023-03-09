@@ -1,23 +1,22 @@
-public class Deer extends Animal{
+import impl.Illable;
+import parent.Animal;
+import parent.Human;
+
+public class Deer extends Animal implements Runnable, Illable {
     public Deer(String name, String color){
         super(name, color, 4);
     }
-    public Deer(String color){
-        super(null, color, 4);
+    public Deer(String name){
+        super(name, null, 4);
     }
 
     @Override
-    public void toFly() {
-        System.out.println("Олени не умеют летать");
+    public void run() {
+
     }
 
     @Override
-    public void hunt() {
-        System.out.println("Олени - растительноядные животные");
-    }
+    public void getIll() {
 
-    @Override
-    public void speak() {
-        System.out.println("Прокричал что-то на оленьем");
     }
 }
