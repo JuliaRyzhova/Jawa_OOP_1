@@ -1,3 +1,5 @@
+package classesAnimal;
+
 import impl.Illable;
 import impl.Swimable;
 import parent.Animal;

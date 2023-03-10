@@ -1,38 +1,40 @@
+package classesAnimal;
+
 import impl.Runnable;
 import impl.*;
 import parent.Animal;
 
-public class Goose extends Animal implements Flyable, Runnable, Swimable, Illable, Speakable {
-    public Goose(String name, String color) {
+public class Duck extends Animal implements Flyable, Runnable, Swimable, Illable, Speakable {
+    public Duck(String name, String color) {
         super(name, color, 2);
     }
 
-    public Goose(String name) {
-        super(name, null, 2);
+    public Duck(String name) {
+        this(name, null);
     }
 
     @Override
     public void hunt() {
     }
 
-
     @Override
     public void speak() {
-        System.out.println("Гагагага!!!!");
+        System.out.println("Quack!");
     }
 
     @Override
     public int getFlightSpeed() {
-        return 6;
+        return 20;
     }
 
     @Override
     public void getIll() {
+
     }
 
     @Override
     public int getRunSpeed() {
-        return 15;
+        return 0;
     }
 
     @Override

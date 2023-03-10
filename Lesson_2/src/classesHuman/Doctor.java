@@ -1,3 +1,5 @@
+package classesHuman;
+
 import impl.Illable;
 import parent.Human;
 

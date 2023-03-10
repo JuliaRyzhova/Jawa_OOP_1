@@ -1,3 +1,5 @@
+import classesAnimal.*;
+import classesHuman.Doctor;
 import veterinary.VetClinic;
 
 import java.util.ArrayList;
@@ -22,6 +24,8 @@ public class Main {
         System.out.println("Swimming animals: " + vetClinic.getSwimable());
         System.out.println(("Speaking animals: " + vetClinic.getSpeakable()));
         System.out.println("All animals in Clinic: " + vetClinic.getAnimals());
+
+        System.out.println();
 
         Doctor merlova = new Doctor("Мерлова Ирина Витальевна", "Ветеринарный врач");
         Doctor surikov = new Doctor("Суриков Иван Игоревич", "Ветеринарный врач");

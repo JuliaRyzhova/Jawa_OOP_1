@@ -1,30 +1,37 @@
+package classesAnimal;
+
 import impl.Illable;
+import impl.Runnable;
 import impl.Speakable;
 import parent.Animal;
 
-public class Dog extends Animal implements Runnable, Illable, Speakable {
-    public Dog(String name, String color) {
+
+public class Cat extends Animal implements Runnable, Illable, Speakable {
+    public Cat(String name, String color) {
         super(name, color, 4);
     }
 
-    public Dog(String name) {
+    public Cat(String name) {
         this(name, null);
     }
 
     @Override
     public void hunt() {
+
     }
 
     @Override
     public void speak() {
-        System.out.println("Woof!");
+        System.out.println("Meow!");
     }
 
     @Override
     public void getIll() {
+
     }
 
     @Override
-    public void run() {
+    public int getRunSpeed() {
+        return 0;
     }
 }

@@ -1,3 +1,5 @@
+package classesAnimal;
+
 import impl.Flyable;
 import impl.Illable;
 import parent.Animal;
