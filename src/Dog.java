@@ -12,17 +12,19 @@ public class Dog extends Animal implements Runnable, Illable, Speakable {
     }
 
     @Override
+    public void hunt() {
+    }
+
+    @Override
     public void speak() {
         System.out.println("Woof!");
     }
 
     @Override
     public void getIll() {
-
     }
 
     @Override
     public void run() {
-
     }
 }

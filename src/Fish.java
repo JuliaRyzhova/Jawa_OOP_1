@@ -13,12 +13,14 @@ public class Fish extends Animal implements Swimable, Illable {
     }
 
     public Fish() {
+    }
 
+    @Override
+    public void hunt() {
     }
 
     @Override
     public void getIll() {
-
     }
 
     @Override

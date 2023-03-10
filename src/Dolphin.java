@@ -12,6 +12,10 @@ public class Dolphin extends Animal implements Swimable, Illable {
     }
 
     @Override
+    public void hunt() {
+    }
+
+    @Override
     public int getSwimSpeed() {
         return 0;
     }

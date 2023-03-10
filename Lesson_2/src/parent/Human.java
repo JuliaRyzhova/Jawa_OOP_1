@@ -10,14 +10,11 @@ public abstract class Human implements Illable {
     }
 
     // Конструкторы
-        public Human(String name) {
-            this.name = name;
+    public Human(String name) {
+        this.name = name;
+    }
 
-
-        }
-
-        public String getName() {
-            return name;
-        }
-
+    public String getName() {
+        return name;
+    }
 }

@@ -54,11 +54,7 @@ public abstract class Animal {
 
     //Поведение
 
-    public void hunt() {
-        wakeUp();
-        findFood();
-        eat();
-    }
+    public abstract void hunt();
 
     private void wakeUp() {
         System.out.println("Wake up..");

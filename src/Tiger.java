@@ -14,6 +14,10 @@ public class Tiger extends Animal implements Runnable, Swimable, Illable, Speaka
     }
 
     @Override
+    public void hunt() {
+    }
+
+    @Override
     public void speak() {
         System.out.println("РРррРррРрРР........");
     }

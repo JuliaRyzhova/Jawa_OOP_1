@@ -11,6 +11,10 @@ public class Goose extends Animal implements Flyable, Runnable, Swimable, Illabl
         super(name, null, 2);
     }
 
+    @Override
+    public void hunt() {
+    }
+
 
     @Override
     public void speak() {
@@ -24,7 +28,6 @@ public class Goose extends Animal implements Flyable, Runnable, Swimable, Illabl
 
     @Override
     public void getIll() {
-
     }
 
     @Override

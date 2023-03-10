@@ -12,7 +12,6 @@ import java.util.List;
 public class VetClinic {
     private final List<Animal> animals;
 
-
     // Конструктор
     public VetClinic() {
         this.animals = new ArrayList<>();
