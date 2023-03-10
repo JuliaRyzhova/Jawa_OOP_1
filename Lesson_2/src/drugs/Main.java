@@ -46,16 +46,17 @@ public class Main {
             System.out.println(item);
         }
 
-
+        System.out.println("Component componentCat: ");
+        System.out.println(componentCat);
         System.out.println("Hashcodes componentCat: ");
         for (Component component: componentCat) {
             System.out.println(component.hashCode());
         }
 
         Set<Component> result = new HashSet<>(componentCat);
+        System.out.println("Result unique list of componentCat: ");
         System.out.println(result);
-        for (Component res: result
-             ) {
+        for (Component res: result) {
             System.out.println(res.hashCode());
         }
     }

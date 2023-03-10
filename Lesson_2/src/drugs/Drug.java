@@ -25,7 +25,8 @@ public abstract class Drug implements Iterable<Component>, Comparable<Drug> {
         }
         if (power < obj.getDrugPower()) {
             return -1;
-        } else return 1;
+        }
+        else return 1;
 
     }
 
